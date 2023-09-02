@@ -1,0 +1,165 @@
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+/* Bg Start */
+.bg-2 {
+    background-color: #121212;
+}
+/* Bg End */
+
+/* Custom Border Start */
+.border-custom {
+    border: 1px solid #444;
+    transition: all 0.4s ease-in-out;
+}
+/* Custom Border End */
+
+/* Custom Border Hover Start */
+.border-custom:hover{
+    border-color: var(--bs-blue);
+}
+/* Custom Border Hover End */
+
+/* Navbar Start */
+.navbar-nav {
+  --bs-navbar-nav-link-padding-x: 1.5rem;
+}
+/* Navbar End */
+
+/* Home Start*/
+.header-body {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0 1em 0;
+}
+
+.header-body div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+h1 {
+    font-size: 4.5em;
+}
+
+.header-body p {
+    max-width: 20em;
+    text-transform: uppercase;
+    line-height: 23px;
+    font-size: 1em;
+}
+
+.header-body p:nth-child(1) {
+    text-align: right;
+}
+
+.bar {
+    width: 0.4em;
+    height: 4em;
+    background: linear-gradient(
+        0deg,
+        rgb(72, 252, 139, 0) 0%,
+        #2A9FD6 50%,
+        rgba(72, 252, 139, 0) 100%
+    );
+    filter: drop-shadow(0 0 0.5em #48fc8b);
+    margin: 0 2em;
+}
+/* Home End*/
+
+/* About Start */
+/* About End */
+
+/* Skill Start */
+/* Swiper */
+.swiper-pagination-bullet {
+    background-color: white;
+}
+
+/* Project */
+.project {
+    overflow: hidden;
+    position: relative;
+}
+
+.project .overlay {
+    padding: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+.project:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Skill End */
+
+/* Service Start */
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: #555;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.icon:hover {
+    background-color: var(--bs-blue);
+}
+
+.service:hover .icon {
+    background-color: var(--bs-blue);
+}
+/* Service End */
+
+/* About Start */
+/* About End */
+
+/* Scroll to top */
+.scroll-to-top {
+    text-decoration: none;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+}
+
+.scroll-to-top:hover {
+    color: white;
+}
+
+/* Responsive Home Start */
+@media screen and (max-width: 1000px) {
+    }
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+    .header-body div div {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-body p {
+        text-align: center !important;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+}
+/* Responsive Home End */
